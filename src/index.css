@@ -1,10 +1,28 @@
 @import url('bootstrap');
 @import url('bootstrap-icons');
 
+
 .img-banner {
     width: 100%;
-    height: 500px;
+    aspect-ratio: 16/7;
     background-image: url("./assets/img/ChatGPT Image 16 mag 2026, 18_02_11.png");
     background-color: #cccccc;
-    object-fit: cover;
+    background-size: cover;
+    background-position: center;
+}
+
+
+.img-product {
+    width: 100%;
+    height: 260px;
+    object-fit: contain;
+    background-color: #ffffff;
+    display: block;
+}
+
+
+.card .card-img-top {
+    width: 100%;
+    height: 260px;
+    object-fit: contain;
 }

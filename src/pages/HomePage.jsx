@@ -1,5 +1,5 @@
-import logo from '../assets/img/ChatGPT Image 16 mag 2026, 11_42_05.png'
 
+import AppHeader from '../components/AppHeader'
 
 export default function HomePage() {
 
@@ -8,24 +8,7 @@ export default function HomePage() {
 
         <>
 
-            <header>
-                <nav className="navbar navbar-expand-lg navbar-light bg-light">
-                    <a className="navbar-brand" href="#"><img src={logo} alt="Logo" width="100" height="50" /></a>
-                    <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                        <span className="navbar-toggler-icon"></span>
-                    </button>
-                    <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
-                        <div className="navbar-nav">
-                            <a className="nav-item nav-link active" href="#">Home</a>
-                            <a className="nav-item nav-link" href="#">Prodotti</a>
-                            <a className="nav-item nav-link" href="#">About</a>
-                        </div>
-                    </div>
-                </nav>
-
-
-            </header>
-
+            <AppHeader />
             <main>
                 <div className="img-banner p-5 mb-4 bg-light rounded-3">
                     <div className="container-fluid py-5">
