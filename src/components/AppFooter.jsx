@@ -24,10 +24,10 @@ export default function AppFooter() {
                     <div className="col">
                         <h5>Seguici sui social</h5>
                         <ul className='list-unstyled d-flex flex-column gap-2'>
-                            <li><Link to="#" className='text-decoration-none text-reset'><i class="bi bi-facebook"></i> Facebook</Link></li>
-                            <li><Link to="#" className='text-decoration-none text-reset'><i class="bi bi-instagram"></i> Instagram</Link></li>
-                            <li><Link to="#" className='text-decoration-none text-reset'><i class="bi bi-twitter"></i> Twitter</Link></li>
-                            <li><Link to="#" className='text-decoration-none text-reset'><i class="bi bi-tiktok"></i> TikTok</Link></li>
+                            <li><Link to="#" className='text-decoration-none text-reset'><i className="bi bi-facebook"></i> Facebook</Link></li>
+                            <li><Link to="#" className='text-decoration-none text-reset'><i className="bi bi-instagram"></i> Instagram</Link></li>
+                            <li><Link to="#" className='text-decoration-none text-reset'><i className="bi bi-twitter"></i> Twitter</Link></li>
+                            <li><Link to="#" className='text-decoration-none text-reset'><i className="bi bi-tiktok"></i> TikTok</Link></li>
                         </ul>
 
                     </div>
