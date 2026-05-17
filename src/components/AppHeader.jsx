@@ -1,7 +1,9 @@
 import logo from '../assets/img/ChatGPT Image 16 mag 2026, 11_42_05.png'
 import { NavLink } from 'react-router-dom'
+import menu from '../data/menu-nav'
 
 export default function AppHeader() {
+
 
 
     return (
@@ -13,9 +15,11 @@ export default function AppHeader() {
                 </button>
                 <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div className="navbar-nav">
-                        <NavLink className="nav-item nav-link active" to="/">Home</NavLink>
-                        <NavLink className="nav-item nav-link" to="/products">Prodotti</NavLink>
-                        <NavLink className="nav-item nav-link" to="/about">About</NavLink>
+                        {menu.map((item) => (
+                            <NavLink className="nav-item nav-link" to={item.path} key={item.id}>
+                                {item.name}
+                            </NavLink>
+                        ))}
                     </div>
                 </div>
             </nav>

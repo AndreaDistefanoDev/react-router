@@ -1,4 +1,5 @@
 
+import AppFooter from '../components/AppFooter'
 import AppHeader from '../components/AppHeader'
 
 export default function HomePage() {
@@ -34,40 +35,8 @@ export default function HomePage() {
                 </section>
             </main>
 
-            <footer className='bg-light'>
-                <div className="container">
-                    <div className="row row-cols-1 row-cols-md-3 g-4 d-flex">
-                        <div className="col">
-                            <h5>Contatti</h5>
-                            <p>Email: info@vestora.com</p>
-                            <p>Telefono: +39 02 1234567</p>
-                            <p>Indirizzo: Via Roma 123, Milano</p>
-                        </div>
-                        <div className="col">
-                            <h5>Quick Links</h5>
-                            <ul className='list-unstyled d-flex flex-column gap-2'>
-                                <li><a href="#" className='text-decoration-none text-reset'>Home</a></li>
-                                <li><a href="#" className='text-decoration-none text-reset'>Prodotti</a></li>
-                                <li><a href="#" className='text-decoration-none text-reset'>About</a></li>
-                            </ul>
-                        </div>
 
-                        <div className="col">
-                            <h5>Seguici sui social</h5>
-                            <ul className='list-unstyled d-flex flex-column gap-2'>
-                                <li><a href="#" className='text-decoration-none text-reset'><i class="bi bi-facebook"></i> Facebook</a></li>
-                                <li><a href="#" className='text-decoration-none text-reset'><i class="bi bi-instagram"></i> Instagram</a></li>
-                                <li><a href="#" className='text-decoration-none text-reset'><i class="bi bi-twitter"></i> Twitter</a></li>
-                                <li><a href="#" className='text-decoration-none text-reset'><i class="bi bi-tiktok"></i> TikTok</a></li>
-                            </ul>
-
-                        </div>
-                    </div>
-                </div>
-
-
-
-            </footer >
+            <AppFooter />
 
 
         </>

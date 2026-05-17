@@ -1,5 +1,5 @@
 import AppHeader from "../components/AppHeader";
-
+import AppFooter from "../components/AppFooter";
 export default function About() {
 
 
@@ -7,8 +7,10 @@ export default function About() {
         <>
 
             <AppHeader />
+            <main>
 
-
+            </main>
+            <AppFooter />
 
         </>
     )
