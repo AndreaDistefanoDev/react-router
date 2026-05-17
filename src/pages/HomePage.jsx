@@ -1,7 +1,3 @@
-
-import AppFooter from '../components/AppFooter'
-import AppHeader from '../components/AppHeader'
-
 export default function HomePage() {
 
 
@@ -9,7 +5,7 @@ export default function HomePage() {
 
         <>
 
-            <AppHeader />
+
             <main>
                 <div className="img-banner p-5 mb-4 bg-light rounded-3">
                     <div className="container-fluid py-5">
@@ -36,7 +32,7 @@ export default function HomePage() {
             </main>
 
 
-            <AppFooter />
+
 
 
         </>

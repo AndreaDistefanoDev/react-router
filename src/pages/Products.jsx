@@ -1,8 +1,5 @@
-import { NavLink } from 'react-router-dom'
-import logo from '../assets/img/ChatGPT Image 16 mag 2026, 11_42_05.png'
+
 import { useState, useEffect } from 'react';
-import AppHeader from '../components/AppHeader';
-import AppFooter from '../components/AppFooter';
 import apiUrl from '../data/api';
 export default function Products() {
 
@@ -22,7 +19,7 @@ export default function Products() {
     return (
 
         <>
-            <AppHeader />
+
 
             <main>
                 <div className="container">
@@ -48,7 +45,7 @@ export default function Products() {
 
             </main >
 
-            <AppFooter />
+
 
         </>
     )
