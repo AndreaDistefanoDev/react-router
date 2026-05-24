@@ -4,6 +4,7 @@ import Products from "./pages/Products"
 import About from "./pages/AboutUs"
 import Layout from "./layout/Layout"
 import SingleProduct from "./pages/SingleProduct"
+import NotFound from "./pages/NotFound"
 
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
             <Route path="/about" element={<About />} />
             <Route path="/products" element={<Products />} />
             <Route path="/product/:id" element={<SingleProduct />} />
+            <Route path="*" element={<NotFound />} />
           </Route>
         </Routes>
 
