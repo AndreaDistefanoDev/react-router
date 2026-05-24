@@ -7,7 +7,7 @@ export default function SingleProduct() {
     const [product, setProduct] = useState({})
     const currentId = Number(id)
 
-    const apiUrl = `https://fakestoreapi.com/products/${id}`
+    const apiUrl = `https://fakestoreapi.com/products/${currentId}`
 
     useEffect(() => {
         fetch(apiUrl)
@@ -17,12 +17,12 @@ export default function SingleProduct() {
                 console.log(err)
                 navigate("*")
             })
-    }, [navigate, id])
+    }, [navigate, currentId])
 
 
     return (
         <>
-            <div className="card">
+            <div className="card mb-4 shadow-sm h-100 d-flex flex-column justify-content-between align-items-center p-3 text-center container my-5">
                 <img src={product.image} className="card-img-top img-product" alt={product.title} />
                 <div className="card-body">
                     <h5 className="card-title">{product.title}</h5>
