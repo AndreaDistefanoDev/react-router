@@ -1,6 +1,7 @@
 
 import { useState, useEffect } from 'react';
 import apiUrl from '../data/api';
+import { Link } from 'react-router-dom';
 export default function Products() {
 
     const [productsData, setProductsData] = useState([])
@@ -10,6 +11,7 @@ export default function Products() {
         fetch(url)
             .then((res) => res.json())
             .then((data) => setProductsData(data))
+            .catch((err) => console.log(err))
     }
     useEffect(() => {
         fetchData(apiUrl)
@@ -33,7 +35,7 @@ export default function Products() {
                                     <div className="card-body">
                                         <h5 className="card-title">{product.title}</h5>
                                         <p className="card-text"><strong>Prezzo: €{product.price.toFixed(2)}</strong></p>
-                                        <a href="#" className="btn btn-primary">Acquista ora</a>
+                                        <Link to={`/product/${product.id}`} className="btn btn-primary">Acquista ora</Link>
                                     </div>
                                 </div>
                             </div>

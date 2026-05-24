@@ -3,6 +3,7 @@ import HomePage from "./pages/HomePage"
 import Products from "./pages/Products"
 import About from "./pages/AboutUs"
 import Layout from "./layout/Layout"
+import SingleProduct from "./pages/SingleProduct"
 
 function App() {
 
@@ -16,6 +17,7 @@ function App() {
             <Route path="/" element={<HomePage />} />
             <Route path="/about" element={<About />} />
             <Route path="/products" element={<Products />} />
+            <Route path="/product/:id" element={<SingleProduct />} />
           </Route>
         </Routes>
 
