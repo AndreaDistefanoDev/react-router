@@ -1,8 +1,11 @@
 import logo from "../assets/img/ChatGPT Image 17 mag 2026, 19_59_08.png";
 import { NavLink } from "react-router-dom";
 import menu from "../data/menu-nav";
+import { useContext } from "react";
+import BudgetContext from "../context/BudgetContext";
 
 export default function AppHeader() {
+  const { budgetMode, setbudgetMode, toggleBudgetMode } = useContext(BudgetContext);
   return (
     <header>
       <nav className="navbar navbar-expand-lg ">
@@ -33,6 +36,13 @@ export default function AppHeader() {
             ))}
           </div>
         </div>
+        <button type="button" className={`btn ms-auto me-3 ${budgetMode ? "btn-danger" : "btn-success"}`} onClick={toggleBudgetMode}>
+          <i className={`${budgetMode ? "bi bi-toggle-off" : "bi bi-toggle-on"}`}></i> Modalità Budget
+        </button>
+
+
+
+
       </nav>
     </header>
   );
