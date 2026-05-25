@@ -36,7 +36,7 @@ export default function AppHeader() {
             ))}
           </div>
         </div>
-        <button type="button" className={`btn ms-auto me-3 ${budgetMode ? "btn-danger" : "btn-success"}`} onClick={toggleBudgetMode}>
+        <button type="button" className={`btn ms-auto me-3 ${budgetMode ? "btn-light" : "btn-success"}`} onClick={toggleBudgetMode}>
           <i className={`${budgetMode ? "bi bi-toggle-off" : "bi bi-toggle-on"}`}></i> Modalità Budget
         </button>
 
